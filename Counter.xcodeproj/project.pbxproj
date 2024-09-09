@@ -8,12 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		CA2503AA2C8F9ECF000ED2DD /* CounterApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA2503A92C8F9ECF000ED2DD /* CounterApp.swift */; };
-		CA2503AC2C8F9ECF000ED2DD /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA2503AB2C8F9ECF000ED2DD /* ContentView.swift */; };
 		CA2503AE2C8F9ED0000ED2DD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CA2503AD2C8F9ED0000ED2DD /* Assets.xcassets */; };
 		CA2503B12C8F9ED0000ED2DD /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CA2503B02C8F9ED0000ED2DD /* Preview Assets.xcassets */; };
 		CA2503BB2C8F9ED1000ED2DD /* CounterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA2503BA2C8F9ED1000ED2DD /* CounterTests.swift */; };
 		CA2503C52C8F9ED1000ED2DD /* CounterUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA2503C42C8F9ED1000ED2DD /* CounterUITests.swift */; };
 		CA2503C72C8F9ED1000ED2DD /* CounterUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA2503C62C8F9ED1000ED2DD /* CounterUITestsLaunchTests.swift */; };
+		CA44A6442C8FA92400E2BC41 /* CounterFeature.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA44A6432C8FA92400E2BC41 /* CounterFeature.swift */; };
+		CA44A6472C8FA9AF00E2BC41 /* ComposableArchitecture in Frameworks */ = {isa = PBXBuildFile; productRef = CA44A6462C8FA9AF00E2BC41 /* ComposableArchitecture */; };
+		CA4ED8292C8FB661008BD101 /* CounterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA4ED8282C8FB661008BD101 /* CounterView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +38,6 @@
 /* Begin PBXFileReference section */
 		CA2503A62C8F9ECF000ED2DD /* Counter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Counter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CA2503A92C8F9ECF000ED2DD /* CounterApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounterApp.swift; sourceTree = "<group>"; };
-		CA2503AB2C8F9ECF000ED2DD /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		CA2503AD2C8F9ED0000ED2DD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CA2503B02C8F9ED0000ED2DD /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		CA2503B62C8F9ED1000ED2DD /* CounterTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CounterTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -44,6 +45,8 @@
 		CA2503C02C8F9ED1000ED2DD /* CounterUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CounterUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CA2503C42C8F9ED1000ED2DD /* CounterUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounterUITests.swift; sourceTree = "<group>"; };
 		CA2503C62C8F9ED1000ED2DD /* CounterUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounterUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		CA44A6432C8FA92400E2BC41 /* CounterFeature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounterFeature.swift; sourceTree = "<group>"; };
+		CA4ED8282C8FB661008BD101 /* CounterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounterView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +54,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CA44A6472C8FA9AF00E2BC41 /* ComposableArchitecture in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,6 +82,7 @@
 				CA2503B92C8F9ED1000ED2DD /* CounterTests */,
 				CA2503C32C8F9ED1000ED2DD /* CounterUITests */,
 				CA2503A72C8F9ECF000ED2DD /* Products */,
+				CA44A6452C8FA9AF00E2BC41 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -95,7 +100,8 @@
 			isa = PBXGroup;
 			children = (
 				CA2503A92C8F9ECF000ED2DD /* CounterApp.swift */,
-				CA2503AB2C8F9ECF000ED2DD /* ContentView.swift */,
+				CA44A6432C8FA92400E2BC41 /* CounterFeature.swift */,
+				CA4ED8282C8FB661008BD101 /* CounterView.swift */,
 				CA2503AD2C8F9ED0000ED2DD /* Assets.xcassets */,
 				CA2503AF2C8F9ED0000ED2DD /* Preview Content */,
 			);
@@ -127,6 +133,13 @@
 			path = CounterUITests;
 			sourceTree = "<group>";
 		};
+		CA44A6452C8FA9AF00E2BC41 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -134,6 +147,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CA2503CA2C8F9ED1000ED2DD /* Build configuration list for PBXNativeTarget "Counter" */;
 			buildPhases = (
+				CA4DB1512C8FA83700426BDC /* Fix SPM */,
 				CA2503A22C8F9ECF000ED2DD /* Sources */,
 				CA2503A32C8F9ECF000ED2DD /* Frameworks */,
 				CA2503A42C8F9ECF000ED2DD /* Resources */,
@@ -143,6 +157,9 @@
 			dependencies = (
 			);
 			name = Counter;
+			packageProductDependencies = (
+				CA44A6462C8FA9AF00E2BC41 /* ComposableArchitecture */,
+			);
 			productName = Counter;
 			productReference = CA2503A62C8F9ECF000ED2DD /* Counter.app */;
 			productType = "com.apple.product-type.application";
@@ -215,6 +232,9 @@
 				Base,
 			);
 			mainGroup = CA25039D2C8F9ECF000ED2DD;
+			packageReferences = (
+				CA4DB1502C8FA80600426BDC /* XCRemoteSwiftPackageReference "swift-composable-architecture" */,
+			);
 			productRefGroup = CA2503A72C8F9ECF000ED2DD /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -252,13 +272,35 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		CA4DB1512C8FA83700426BDC /* Fix SPM */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Fix SPM";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\nif [ -d \"${SYMROOT}/Release${EFFECTIVE_PLATFORM_NAME}/\" ] && [ \"${SYMROOT}/Release${EFFECTIVE_PLATFORM_NAME}/\" != \"${SYMROOT}/${CONFIGURATION}${EFFECTIVE_PLATFORM_NAME}/\" ] \nthen\n  cp -f -R \"${SYMROOT}/Release${EFFECTIVE_PLATFORM_NAME}/\" \"${SYMROOT}/${CONFIGURATION}${EFFECTIVE_PLATFORM_NAME}/\"\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		CA2503A22C8F9ECF000ED2DD /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CA2503AC2C8F9ECF000ED2DD /* ContentView.swift in Sources */,
+				CA44A6442C8FA92400E2BC41 /* CounterFeature.swift in Sources */,
 				CA2503AA2C8F9ECF000ED2DD /* CounterApp.swift in Sources */,
+				CA4ED8292C8FB661008BD101 /* CounterView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -347,7 +389,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
@@ -404,7 +446,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
@@ -588,6 +630,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		CA4DB1502C8FA80600426BDC /* XCRemoteSwiftPackageReference "swift-composable-architecture" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/pointfreeco/swift-composable-architecture";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.14.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		CA44A6462C8FA9AF00E2BC41 /* ComposableArchitecture */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CA4DB1502C8FA80600426BDC /* XCRemoteSwiftPackageReference "swift-composable-architecture" */;
+			productName = ComposableArchitecture;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = CA25039E2C8F9ECF000ED2DD /* Project object */;
 }

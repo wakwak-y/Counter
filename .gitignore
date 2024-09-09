@@ -1,0 +1,8 @@
+# Xcode
+*.xcuserdata/
+*.xcuserstate
+DerivedData/
+build/
+
+# Swift Package Manager
+.build/
